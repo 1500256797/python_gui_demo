@@ -5,7 +5,7 @@ from PySide2.QtWidgets import QApplication, QMessageBox, QMdiSubWindow, QTreeWid
 from PySide2.QtUiTools import QUiLoader
 
 from lib.share import SI
-from cfg_setting import Win_CfgConnection
+from cfg import Win_CfgConnection
 from browser_automate import Win_BrowserAutomate
 class Win_Main :
 
