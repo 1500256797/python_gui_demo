@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1615</width>
+    <height>923</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>主页</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/jianjianjianjian/Desktop/jian.png</normaloff>C:/Users/jianjianjianjian/Desktop/jian.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTreeWidget" name="opTree">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>3</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>10</number>
+       </property>
+       <property name="columnCount">
+        <number>1</number>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="headerStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QMdiArea" name="mdiArea">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>5</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="lineWidth">
+        <number>10</number>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1615</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_wallet"/>
+    <addaction name="action_connection"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_connection"/>
+   <addaction name="action_wallet"/>
+  </widget>
+  <action name="act_version">
+   <property name="text">
+    <string>版本号</string>
+   </property>
+  </action>
+  <action name="act_exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/exit.png</normaloff>
+     <selectedon>C:/Users/jianjianjianjian/.designer/backup/images/exit.png</selectedon>images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_wallet">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/wallet.png</normaloff>images/wallet.png</iconset>
+   </property>
+   <property name="text">
+    <string>wallet</string>
+   </property>
+  </action>
+  <action name="action_connection">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/database.jpg</normaloff>images/database.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>数据库连接</string>
+   </property>
+  </action>
+  <action name="actionbiance">
+   <property name="text">
+    <string>biance</string>
+   </property>
+  </action>
+  <action name="actiongate">
+   <property name="text">
+    <string>gate</string>
+   </property>
+  </action>
+  <action name="actionupbit">
+   <property name="text">
+    <string>upbit</string>
+   </property>
+  </action>
+  <action name="action_pancake">
+   <property name="text">
+    <string>pancake</string>
+   </property>
+  </action>
+  <action name="actionsushiswap">
+   <property name="text">
+    <string>sushiswap</string>
+   </property>
+  </action>
+  <action name="actionuniswap">
+   <property name="text">
+    <string>uniswap</string>
+   </property>
+  </action>
+  <action name="actionvalk">
+   <property name="text">
+    <string>valk</string>
+   </property>
+  </action>
+  <action name="actionzapper">
+   <property name="text">
+    <string>zapper</string>
+   </property>
+  </action>
+  <action name="actionparaswap">
+   <property name="text">
+    <string>paraswap</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
