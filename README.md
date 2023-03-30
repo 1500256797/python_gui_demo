@@ -34,7 +34,7 @@
 
 ```
 # 安装依赖
-npm i
+pip install -r requirements.txt
 
 # 启动
 python main.py
