@@ -7,6 +7,7 @@ from PySide2.QtUiTools import QUiLoader
 from lib.share import SI
 from cfg import Win_CfgConnection
 from browser_automate import Win_BrowserAutomate
+from ai import Win_ai
 class Win_Main :
 
     def __init__(self):
@@ -102,9 +103,21 @@ class Win_Main :
         folderItem.addChild(leafItem)  # 添加到目录节点中
 
 
+        # 创建一个 目录节点
+        folderItem = QTreeWidgetItem()
+        folderItem.setText(0, 'AI模型')
+        folderItem.setExpanded(True)  # 设置该节点为展开状态
+        root.addChild(folderItem)  # 添加到树的不可见根节点下，就成为第一层节点
+
+        leafItem = QTreeWidgetItem()  # 叶子 节点
+        leafItem.setText(0, '打开ai模型')  # 设置该节点  第1个column 文本
+        folderItem.addChild(leafItem)  # 添加到目录节点中
+
+
         # 维护一张操作树界面表，维护item和功能区的对应关系
         self.opTreeActionTable = {
             '管理浏览器': Win_BrowserAutomate,
+            '打开ai模型': Win_ai
         }
 
 #流程，ui，菜单栏、mdi子窗口
